@@ -1,0 +1,21 @@
+
+node{
+    stage('scm checkout'){
+        git branch: 'master', credentialsId: 'GIT', url: 'https://github.com/srinivas46/pipe.git'
+    }
+        stage('execute maven'){
+        def mvnHome = tool name: 'MAVEN_HOME', type: 'maven'
+        def mvnCmd = "${mvnHome}/bin/mvn"
+        sh "${mvnCmd} clean package"
+    }
+    stage('Build Docker image'){
+        sh 'docker build -t sri5606/demo:latest .'
+    }
+    stage('Push Docker image'){
+        withCredentials([usernamePassword(credentialsId: 'dockerHub', passwordVariable: 'dockerHubPassword', usernameVariable: 'dockerHubUser')]) {
+    sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPassword}"
+        }
+        sh 'docker push sri5606/demo:latest'
+    }
+    
+}

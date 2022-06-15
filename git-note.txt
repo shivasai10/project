@@ -1,0 +1,57 @@
+1. Version Control Tools or SCM (Source code management tool)
+
+GIT/GITHUB  -->
+
+GITLAB
+
+BITBUCKET
+
+CODE COMMIT -->
+
+AZURE REPO  -->
+
+TFS 
+
+SVN
+
+2. What is Distributed version control and centralized version control
+
+git clone url
+
+git push url
+
+git pull url
+
+git add .
+
+git commit -m ""
+
+git branch --all
+
+git branch branchname 
+
+git checkout 
+
+git log 
+
+------------------------------------
+
+main --> full code + new feature 
+
+auto merge 
+
+develop ----> replica of main branch + New feature ---> Pipeline running --> output green 
+
+
+pull request ---> from feature to develop 
+
+feature ----> fulll code + new feature 
+
+hotfix --> 
+
+----------------------------------------
+Assignments:
+
+1. create account with gitlab and bitbucket 
+
+2. create a repo and do the basic operatipons 

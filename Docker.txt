@@ -1,0 +1,117 @@
+
+Containerization:
+
+Docker :
+
+installation:
+
+    1  clear
+    2  sudo apt-get update
+    3  sudo apt-get install     ca-certificates     curl     gnupg     lsb-release
+    4  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+    5  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+    6  sudo apt-get update
+    7  sudo apt-get install docker-ce docker-ce-cli containerd.io
+    8  docker --version
+    9  systemctl status docker
+
+1. docker file:
+
+FROM  
+
+MAINTAINER 
+
+COPY
+
+ADD
+
+EXPOSE
+
+CMD
+
+ENTRYPOINT
+
+RUN
+
+ENV
+
+WORKDIR
+
+2. docker image
+
+docker build . ---> To build the docker images 
+
+docker images ---> Check the docker image in local
+
+docker image-Id history --> To check the layers of docker image 
+
+docker tag Image ID  --> Tag a name to docker image
+
+docker rmi $(docker images -q)  --> To delete multiple docker images at a time
+
+
+3. docker container
+
+docker run -it -p 8080:8080 Image-name --> Run the docker image 
+
+it --> Interactive terminal
+d --> Detach mode 
+
+Docker ps (or) docker container ls --> check the running conatiners
+
+Docker ps -a ---> checl all containers including stopped
+
+docker inspect Container-ID --> To know more about container
+
+docker exec -it container-id /bin/bash  --> To run the commands inside container
+
+docker system prune --> delete all stopped containers and images 
+
+docker system df --> summary of images and containers
+
+docker stop/start/pause/unpause/kill Container-id  --> Manage the conatiners 
+ 
+
+
+4. docker hub
+
+Docker login --> To login into docker hub from CLI
+
+docker pull --> pull the images from dockerHub
+
+docker push --> Push the image from local to Hub
+
+5. docker compose
+
+Installation:
+
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+docker-compose --version
+
+Docker-compose up 
+
+docker-compose down 
+
+6. docker swarm (Assinment)
+
+Interview Questions:
+
+1. what is diff between copy and add
+
+2. what is diff between cmd and entrypoint
+
+3. What is entrypoint for nginx, https and Tomcat
+
+4. How to reduce docker image Size
+
+5. Explore docker compose 
+
+6. Explore Docker Swarm 
+
+7. What id docker commit and how to use it 
+
+8. How to delete unused images at a time 
+

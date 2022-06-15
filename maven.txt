@@ -1,0 +1,66 @@
+
+Build Management Tools:
+
+Maven  --> For JAVA projects
+
+Maven:
+java Installation:
+
+$amazon-linux-extras install java-openjdk11
+
+#JAVA_HOME
+JAVA_HOME="/usr/lib/jvm/java-11-openjdk-11.0.11.0.9-1.amzn2.0.1.x86_64"
+export JAVA_HOME
+PATH=$PATH:$JAVA_HOME
+export PATH
+Source /etc/profile  --> To update /etc/profile
+
+Maven Installation:
+
+wget URL
+
+export M2_HOME=/opt/maven
+export PATH=${M2_HOME}/bin:${PATH}
+
+chmod +x /etc/profile.d/mavenenv.sh
+source /etc/profile.d/mavenenv.sh
+mvn --version
+
+Goals/Phases:
+
+1. Clean 
+2. Compile 
+3. package 
+4. install
+5. verify
+6. deploy
+
+mvn archetype:generate -DarchetypeArtifactId=maven-archetype-webapp
+
+Structure:
+
+project
+|-- pom.xml
+`-- src
+    `-- main
+        `-- webapp
+            |-- WEB-INF
+            |   `-- web.xml
+            `-- index.jsp
+----------------------------------------------------------------------------------------
+Msbuild ---> Dot net  (Assignment)
+
+-------------------------------------------------------------------------------------
+Npm --> Nodejs, ReactJs and Angular JS 
+
+installation on amazon ec2:
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+. ~/.nvm/nvm.sh
+nvm install node
+node --version
+npm --version
+
+git clone URL
+
+npm install 

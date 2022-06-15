@@ -1,0 +1,56 @@
+
+java Installation:
+
+$amazon-linux-extras install java-openjdk11
+
+#JAVA_HOME
+JAVA_HOME="/usr/lib/jvm/java-11-openjdk-11.0.11.0.9-1.amzn2.0.1.x86_64"
+export JAVA_HOME
+PATH=$PATH:$JAVA_HOME
+export PATH
+Source /etc/profile  --> To update /etc/profile
+
+
+Jenkins-Installation:
+
+1.sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+2.sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+3. amazon-linux-extras install epel -y
+4. yum install daemonize -y
+5. yum install jenkins -y
+6. systemctl start jenkins
+7. systemctl status jenkins
+
+Jenkins Interview Questions:
+
+1. Jenkins Home Path -->/var/lib/jenkins
+2.Jenkins Initial Admin Password -->/var/lib/jenkins/secrets/Initialadminpassword
+3. Scripting used in jenkins--> Groovy
+4. What is diff between poll SCM and BUild Periodically
+5. what is dif betwee declarative and non declarative pipelines?
+
+Assignments:
+
+1. Setup agent node in Jenkins 
+
+2. Take a backup from jenkins
+
+3. Setup Email Notification in Jenkins 
+
+4. Change Jenkins Home PAth
+
+5. Setup Role based Strategy in jenkins
+
+6. Setup pipeline in jenkins
+
+
+
+Plugins:
+
+Tomcat --> deploy to container
+Docker --> Docker bees
+GIT --> GIT
+Maven --> Maven
+SSH --> Ssh remote 
+
+
