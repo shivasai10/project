@@ -1,0 +1,60 @@
+EC2:
+
+1. Instance Types
+
+2. AMI
+
+3. EBS Volumes
+
+4. snapshots
+
+5.Elastic IP
+
+6. Security Group
+
+7. Key pair 
+
+8. What is network Interface?
+
+9. Types of Load balancers and explore differences
+
+10. Explore Dedicated, reserverd and spot instances
+
+11. 
+
+Assignments:
+
+Practical:
+
+1.Explore aws web console
+2.create windows 2016 instance
+3.Try to change the instance size, when the instance is in running state.
+4.Try to build any http web server
+5.Explore termination protection
+6.Create mariadb on ec2 instance and connect to it using mysql workbench or mysql
+command line.
+7.How do i migrate an instance from one availability zone to another availability
+zone.
+8.How do i migrate an instance from one region to another region.
+9.How do i share my image publicly
+10.How do i share my image to another account only
+11.How do you get the access if you lost the user pem file.
+12.setup the mariadb server using user-data.
+13.Host any website in load balancer environment
+14.Host any 2 websites use only one load balancer
+15.Create alarm for EC2 memory utilization to 80%.
+16.Connect to RDS instance using mysql command line utility.
+17.How do you recover any file in S3, if it is deleted accidentally.
+18.How to configure replication from one bucket to another bucket in a different
+region.
+19.How to purge the delete from S3 after 3 months automatically
+20.When we enable static website hosting how do we know how many people are
+accessing our website
+
+
+
+
+ 
+
+
+ 
