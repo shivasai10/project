@@ -1,0 +1,11 @@
+1. Clone a repo using ssh 
+
+2. create a project in gitgub and create one repo inside it
+
+3. setup e mail notification for repo deletion and creation
+
+4. create two branches and merge by raise a pull request with reviewers
+
+5. create a repo and commit files to that repo
+
+6. Explore cherry-pich and use it 
